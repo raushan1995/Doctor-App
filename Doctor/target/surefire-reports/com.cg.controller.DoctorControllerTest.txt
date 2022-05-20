@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.cg.controller.DoctorControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 27.1 s <<< FAILURE! - in com.cg.controller.DoctorControllerTest
+addDoctorControllerTest  Time elapsed: 26.922 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.cg.repository.DoctorRepository.save(Object)" because "this.repository" is null
+	at com.cg.controller.DoctorControllerTest.addDoctorControllerTest(DoctorControllerTest.java:52)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.cg.repository.DoctorRepository.save(Object)" because "this.repository" is null
+	at com.cg.controller.DoctorControllerTest.addDoctorControllerTest(DoctorControllerTest.java:52)
+
+getAllDoctorControllerTest  Time elapsed: 0.057 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.cg.repository.DoctorRepository.findAll()" because "this.repository" is null
+	at com.cg.controller.DoctorControllerTest.getAllDoctorControllerTest(DoctorControllerTest.java:61)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.cg.repository.DoctorRepository.findAll()" because "this.repository" is null
+	at com.cg.controller.DoctorControllerTest.getAllDoctorControllerTest(DoctorControllerTest.java:61)
+
