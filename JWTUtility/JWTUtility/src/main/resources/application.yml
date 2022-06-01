@@ -1,0 +1,4 @@
+jwt:
+  secret: secrectkey123
+server:
+  port: 8085
